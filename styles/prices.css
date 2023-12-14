@@ -1,0 +1,285 @@
+.courses-p{
+    display: grid;
+    width: 100%;
+    height: 1050px;
+    padding: 50px 0;
+    background-color: #26335D;
+    grid-template-rows: 0px 200px;
+    overflow: hidden;
+}
+
+.prices {
+    justify-content: center;
+    margin:auto;
+}
+.prices #watch1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+
+.courses-p .problems {
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+
+.free {
+    color: #252B42;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+
+.item{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 40px;
+}
+
+
+.new{
+    position: absolute;
+    right: -35px;
+    top: -45px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #E77C40;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.products{
+    background-color: white;
+    width: 300px;
+    height: 650px;
+}
+
+.whiteheart{
+    background-color:  #FF6551;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 40px;
+}
+
+.whiteheart{
+    background-image: url("heart1.png");
+}
+
+.course-offers{
+    position: relative;
+    padding: 28px;
+}
+
+.organize{
+    color:#737373;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.price::first-line{
+    color: #FF6551;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+.price{
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #8EC2F2;
+}
+.slate {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+
+}
+
+.course-offers button{
+    background-color: #FF6551;
+    border: 1px solid #FF6551;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 70px;
+    margin: 12px 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.course-offers button:hover {
+    background-color: #ea5242;
+}
+
+.check{
+    display: flex;
+    margin: 10px 0;
+}
+
+.greencheck{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-image: url(greencheck.png);
+    background-size: cover;
+}
+.graycheck {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-image: url(graycheck.png);
+    background-size: cover;
+}
+
+.check:has(p){
+    color: #252B42;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.animation{
+    position: relative;
+    width: 100%;
+}
+
+.green-circle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.green-circle span{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #86ce67;
+    margin: 65px 0;
+    opacity: 50%;
+    animation: greencircle linear infinite;
+}
+
+.red-circle{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 650px;
+    top: 300px;
+    left: 0;
+    align-items: center;
+}
+
+.red-circle span{
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    background-color: pink;
+    opacity: 60%;
+    animation: redcircle 5s linear infinite;
+}
+
+.green-circle :nth-child(1){
+    animation-duration: 3s;
+}
+
+.green-circle :nth-child(2){
+    animation-duration: 2.5s;
+}
+
+.green-circle :nth-child(3){
+    animation-duration: 4s;
+}
+
+.green-circle :nth-child(4){
+    animation-duration: 1.5s;
+}
+
+.green-circle :nth-child(5){
+    animation-duration: 2s;
+}
+
+.green-circle :nth-child(6){
+    animation-duration: 1s;
+}
+
+@keyframes greencircle{
+    0% {left: -10%;}
+    100% {left: 100%;}
+}
+
+@keyframes redcircle{
+    0% {
+        transform: translate(-100%, 0%);
+    }
+    33%{
+        transform: translate(150%, 100%);
+    }
+    66%{
+        transform: translate(400%, -140%);
+    }
+    100%{
+        transform: translate(750%, 0%);
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .item{
+        margin-top: -950px;
+        display: flex;
+    }
+
+}
+@media screen and (max-width: 970px) {
+    .courses-p{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin-top: 300px ;
+        padding: 0;
+    }
+    .item{
+        margin-top: -950px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .products {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .courses-p{
+        margin-top: 600px ;
+    }
+    .prices {
+        width: 80%;
+    }
+}

@@ -1,0 +1,109 @@
+.brandname{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0, 0, 0.5)),url(teacher.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+}
+
+.features {
+    position: relative;
+    display: flex;
+    width: 1000px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    top: 130px;
+}
+.line1 {
+    width: 50px;
+    height: 2px;
+    background: #E74040;
+    margin: 15px 0;
+}
+.laccess, .tcourses ,.einstruction{
+    padding: 20px;
+    background: white;
+    box-shadow: 1px 1px 10px grey;
+}
+.monitor {
+    width: 75px;
+    height: 75px;
+    background: url(monitor.png)no-repeat;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.backpack {
+    width: 75px;
+    height: 75px;
+    background: url(backpack.png)no-repeat;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.book {
+    width: 75px;
+    height: 75px;
+    background: url(book.png)no-repeat;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.features h4 {
+    font-size: 24px;
+    color: #252B42;
+}
+.features p {
+    font-size: 14px;
+    color: #737373;
+}
+.features .einstruction {
+    background: #FF6551;
+}
+.einstruction h4, .einstruction p{
+    color: #fff;
+}
+.einstruction .line1 {
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    margin: 15px 0;
+}
+#join2 {
+    color:#FFC652;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+#hqc {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-bottom: 25px;
+}
+#goal {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 970px) {
+    .features {
+        position: relative;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        justify-content: center;
+        width: auto;
+        top: 00px;
+    }
+}

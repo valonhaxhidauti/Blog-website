@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import "/styles/brandname.css";
+@import "/styles/watch.css";
+@import "/styles/header.css";
+@import "/styles/quality.css";
+@import "/styles/navbar.css";
+@import "/styles/prices.css";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.more {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+h5 {
+    color: #252B42;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+footer p {
+    color: #737373;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+}
+#phone::before{
+    display: inline-flex;
+    content: '';
+    background-image: url('phone_icon.svg');
+    background-repeat: no-repeat;
+    padding: 0 5px;
+    height: 25px;
+    width: 25px;
+}
+#location::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('location_icon.svg');
+    background-repeat: no-repeat;
+    padding: 0 5px;
+    height: 25px;
+    width: 25px;
+}
+#email::before {
+    display: inline-flex;
+    content: '';
+    background-image: url('email_icon.svg');
+    background-repeat: no-repeat;
+    padding: 0 5px;
+    height: 25px;
+    width: 25px;
+}
+.footer {
+    margin: 0;
+    padding: 35px;
+    background: #FAFAFA;
+}
+.watch1 {
+    position: relative;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#icons {
+    text-decoration: none;
+    padding: 0px 5px;
+    color: #FF6551;
+}
+#icons:hover {
+    color: #ea5242 !important;
+}
+
+@media only screen and (max-width: 970px) {
+
+    .more {
+        position: relative;
+        top: 300px;
+        flex-direction: column;
+        margin-left: 50px;
+        justify-content: stretch;
+        width: auto;
+    }
+    .watch1 {
+        margin: 200px 0 0;
+        top: 100px;
+    }
+    .card {
+        width: 100%;
+    }
+    .features {
+        margin: 10px;
+    }
+    .courses > *  {
+        margin-right: 0;
+    }
+    .watch{
+        margin: 10px 10px ;
+    }
+    .join {
+        white-space: nowrap;
+    }
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .links h2 {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 640px) {
+    #contact {
+        position: relative;
+        top: -500px;
+    }
+    .more {
+        position: relative;
+        top: 600px;
+        flex-direction: column;
+        margin-left: 50px;
+        justify-content: stretch;
+        width: auto;
+    }
+    .watch1 {
+        margin: 200px 0 0;
+        top: 500px;
+    }
+}

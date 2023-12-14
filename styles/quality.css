@@ -1,0 +1,179 @@
+
+.card {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .top.product1{
+    background: url('product1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    min-width: 240px;
+}
+.card .top.product2{
+    background: url('product2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    min-width: 240px;
+}
+.card .top.product3{
+    background: url('product3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    min-width: 240px;
+}
+.card .top.product4{
+    background: url('product4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+    min-width: 240px;
+}
+.heart {
+    width: 19px;
+    height: 17px;
+    background-image: url(heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 100%;
+    transition: 0.4s;
+    transition-property: background, scale;
+}
+.cart {
+    width: 19px;
+    height: 17px;
+    background-image: url(cart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 100%;
+    transition: 0.4s;
+    transition-property: background, scale;
+}
+.watching {
+    width: 19px;
+    height: 17px;
+    background-image: url(watch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 100%;
+    transition: 0.4s;
+    transition-property: background, scale;
+}
+.watching:hover,.cart:hover,.heart:hover {
+    background-color: #FF6551;
+    scale: 1.4;
+}
+
+.card .top p {
+color: white;
+background-color: #E74040;
+border-radius: 6px;
+align-self: flex-start;
+margin: 10px 0 0 10px;
+padding: 0px 11px;
+}
+
+.card .top > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.card .bottom {
+    flex: 1;
+    padding: 25px;
+
+}
+.card .bottom > p {
+    color: red;
+    margin-bottom: 10px;
+}
+p.star::after {
+    content: ' \00a0 \00a0 \00a0 4.9';
+    padding: 5px 7px;
+    margin-left: 10px;
+    text-align:start;
+    font-size: 12px;
+    color: #fff;
+    background: #26335D;
+    background-image: url('star.png');
+    background-repeat: no-repeat;
+    background-position:left;
+    border-radius: 20px;
+}
+.extra {
+    margin-top: 20px !important;
+    color: #FF6551;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid #FF6551;
+    padding: 10px 20px;
+    background-color: white;
+    transition: .5s ease;
+    transition-property: background;
+}
+.extra:hover {
+    background: #ff655184;
+}
+
+.card .bottom h4 {
+    margin-bottom: 10px;
+}
+
+.courses {
+    margin: 0 10px;
+    max-width: 1050px;
+
+    gap: 20px;
+    display: flex;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+.courses::-webkit-scrollbar {
+    height: 10px;
+  }
+
+.courses .card {
+    min-width: 250px;
+}
+
+.courses > * {
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 1160px) {
+    .courses {
+        /* flex-wrap: wrap; */
+        margin-right: 0;
+        width: 95%;
+    }
+}

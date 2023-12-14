@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+    <link rel="stylesheet" href="watchesstyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/d9487a61f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close fa-solid fa-xmark"></span>
+          <div class="modal-container">
+            <img src="styles/modal-watch.jpg" alt="watch" width="350px">
+            <div class="sub-container">
+                <h1>Subscribe our newsletter</h1>
+                <p>Sign up here to get 20% off on your next purchase, special...</p>
+                <input id="email-sub" class="modal-input" type="email" placeholder="Enter your email..." >
+                <a href="#" class="shop-now" id="subscribe">SUBSCRIBE</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="links">
+            <h2>
+                <a href="#" class="brand">Brandname</a>
+            </h2>
+            <div class="navigation">
+                <a href="/index.html">Home</a>
+                <a href="/product.html">Product</a>
+                <a href="#pricing">Pricing</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="login">
+                <a href="/watches.html" id="log" style="color: #000;">Watches</a>
+                <a href="#" class="join">Join Us →</a>
+            </div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+                <span class="menu-btn__burger"></span>
+                <span class="menu-btn__burger"></span>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <div class="navbar">
+                <a href="/index.html">Home</a>
+                <a href="/product.html">Product</a>
+                <a href="#pricing">Pricing</a>
+                <a href="/contact.html">Contact</a>
+                <a href="#coursess">Courses</a>
+                <a href="/watches.html">Watches</a>
+                <a href="#">Join Us</a>
+                <a href="#">Dummy 1</a>
+                <a href="#">Dummy 2</a>
+                <a href="#">Dummy 3</a>
+                <a href="#">Dummy 4</a>
+                <a href="#">Dummy 5</a>
+                <a href="#">Dummy 6</a>
+            </div>
+        </nav>
+    </header>
+
+    <section >
+        <div id="slider">
+            <div class="future-of-tech" id="future-of-tech">
+                <div class="text-container" >
+                    <p class="hand-turn">Here to make hand turn</p>
+                    <h1 class="main-h1">The future of tech <br>is here. </h1>
+                    <a href="#" class="shop-now">SHOP NOW</a>
+                </div>
+                <img src="/styles/mainwatch5.jpg" alt="mainwatch" class="main-watch" id="ora1">
+            </div>
+        </div>
+        <div class="arrows">
+            <span id="left-arrow"><</span>
+            <span id="right-arrow">></span>
+        </div>
+    </section>
+    <section>
+        <div class="watch-info">
+            <img src="/styles/mainwatch2.png" alt="mainwatch2" width="500px">
+            <div class="four-watches">
+                <div class="watch-desc">
+                    <img src="styles/watch-desc1.png" alt="img1" width="80px">
+                    <h4>Build Quality and Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="watch-desc">
+                    <img src="styles/watch-desc2.png" alt="img2" width="80px">
+                    <h4>Exellent battery life</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="watch-desc">
+                    <img src="styles/watch-desc3.png" alt="img3" width="80px">
+                    <h4>Battery Life</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="watch-desc">
+                    <img src="styles/watch-desc4.png" alt="img4" width="80px">
+                    <h4>Accurate activity tracking</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="product-sect">
+            <div class="prod-head">
+                <h3>Production For Displaying The Text,<br style="justify-content: center;">Number With Good Clarity.</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate</p>
+            </div>
+            <div class="set-of-watches">
+            </div>
+            <div class="radio-toolbar3" >
+                <input type="radio" id="radioRed" name="radioColor1" value="red" onclick="chbChange(this, 'red')">
+                <label for="radioRed"></label>
+
+                <input type="radio" id="radioGreen" name="radioColor1" value="green" onclick="chbChange(this, 'blue')">
+                <label for="radioGreen"></label>
+
+                <input type="radio" id="radioBlue" name="radioColor1" value="blue" onclick="chbChange(this, 'green')">
+                <label for="radioBlue"></label>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="siri-adv">
+            <h1>Take advantage of siri</h1>
+            <p>Bluetooth Wireless Technology.</p>
+            <p>24 hour total battery life with Charging Case.</p>
+            <p>3 hours charge from case in 15 minutes.</p>
+            <p>One top setup for Apple devices.</p>
+            <p>Five hour battery life.</p>
+            <span class="material-symbols-outlined">play_arrow</span>
+        </div>
+    </section>
+    <section>
+        <div class="prod-head lunch">
+            <h3>You Do Know That They Don't Want<br style="justify-content: center;">You To Have Lunch.</h3>
+        </div>
+        <div class="watch-features">
+            <div class="watch-features-left">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star" style="color: #bbb;"></i>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, saepe debitis. Quas placeat, nam rerum veritatis consequatur cumque magnam aperiam aspernatur velit eligendi</p>
+                <h5 style="padding-bottom:0;">- Glasgow</h5>
+                <h4>IOS developer</h4>
+            </div>
+            <img src="/styles/woman-watch.png" alt="woman-watch">
+        </div>
+        <div class="arrows">
+            <span id="right-arrow" style="color: royalblue; border: 1px solid royalblue;"><</span>
+            <span id="left-arrow" style="color: royalblue; border: 1px solid royalblue;">></span>
+        </div>
+    </section>
+    <section>
+        <div style="display: flex; justify-content:center;">
+            <div class="unskewed-back">
+                <div class="skewed-container">
+                    <h3 style="color:white;">You Do Know That They Don't Want</h3>
+                    <h3 style="color:white;">You To Have Lunch.</h3>
+                    <form action="#" >
+                        <div class="container">
+                            <input type="text" placeholder="Enter your email..">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="recent-n">
+            <h3 class="prod-head">Recent News</h3>
+            <div class="recent-cards">
+                <div class="r-card">
+                    <div class="man-watch1">
+                        <p>15, Jul, 2021</p>
+                    </div>
+                    <div class="montblanc-s">
+                        <h5>Watch Review: Montblanc ...</h5>
+                        <p>Senectus et netus et malesuada fames ac. Eu augue ut lect...</p>
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+                <div class="r-card">
+                    <div class="man-watch1" id="man-watch2">
+                        <p>15, Jul, 2021</p>
+                    </div>
+                    <div class="montblanc-s">
+                        <h5>Watch Review: Citizen CZ ...</h5>
+                        <p>Senectus et netus et malesuada fames ac. Eu augue ut lect...</p>
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+                <div class="r-card">
+                    <div class="man-watch1">
+                        <p>15, Jul, 2021</p>
+                    </div>
+                    <div class="montblanc-s">
+                        <h5>Watch Review: Montblanc ...</h5>
+                        <p>Senectus et netus et malesuada fames ac. Eu augue ut lect...</p>
+                        <a href="#">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="spread-features">
+            <div class="spread-f">
+                <span class="material-symbols-outlined">assignment_return</span>
+                <h5>7 Days Return</h5>
+                <p>Lorem is simply dummy text of the printing text of the printing.</p>
+            </div>
+            <div class="spread-f">
+                <span class="material-symbols-outlined">lock</span>
+                <h5>100% Payment Secure</h5>
+                <p>Lorem is simply dummy text of the printing text of the printing.</p>
+            </div>
+            <div class="spread-f">
+                <span class="material-symbols-outlined">support_agent</span>
+                <h5>Support 24/7</h5>
+                <p>Lorem is simply dummy text of the printing text of the printing.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="more">
+            <div>
+                <h5>Company info</h5>
+                <p>About Us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h5>Legal</h5>
+                <p>About Us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h5>Features</h5>
+                <p>Business Marketing</p>
+                <p>User Analytic</p>
+                <p>Live Chat</p>
+                <p>Unlimited Support</p>
+            </div>
+            <div>
+                <h5>Resources</h5>
+                <p>IOS & Android</p>
+                <p>Watch a Demo</p>
+                <p>Customers</p>
+                <p>API</p>
+            </div>
+            <div>
+                <h5>Get In Touch</h5>
+                <p id="phone">(480) 555-0103</p>
+                <p id="location">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                <p id="email">debra.holt@example.com</p>
+            </div>
+        </div>
+        <div class="watch1 footer">
+            <div>
+                <p>Made With Love By Figmaland All Right Reserved </p>
+            </div>
+            <div>
+                <a href="#" class="fa-brands fa-facebook fa-xl" id="icons"></a>
+                <a href="#" class="fa-brands fa-instagram fa-xl" id="icons"></a>
+                <a href="#" class="fa-brands fa-twitter fa-xl" id="icons"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+            const contentDiv = document.getElementById('future-of-tech');
+            const leftArrow = document.getElementById('left-arrow');
+            const rightArrow = document.getElementById('right-arrow');
+            const contentArray =
+                [
+                '<div class="text-container" ><p class="hand-turn">Here to make hand turn</p><h1 class="main-h1">The future of<br>tech is here. </h1><a href="#" class="shop-now">SHOP NOW</a></div><img src="/styles/mainwatch5.jpg" alt="mainwatch" class="main-watch" width="400px" id="ora1">',
+                '<div class="text-container" ><p class="hand-turn">Here to make hand turn</p><h1 class="main-h1">A healthy leap<br> ahead.</h1><a href="#" class="shop-now">SHOP NOW</a></div><img src="/styles/mainwatch3.jpg" alt="mainwatch" class="main-watch" id="ora1">',
+                '<div class="text-container" ><p class="hand-turn">Here to make hand turn</p><h1 class="main-h1">With a healthy<br>dose of style.</h1><a href="#" class="shop-now">SHOP NOW</a></div><img src="/styles/mainwatch4.jpg" alt="mainwatch" class="main-watch" id="ora1">'
+                ];
+            let currentIndex = 0;
+
+            leftArrow.addEventListener('click', () => {
+                currentIndex--;
+
+                if (currentIndex < 0) {
+                    currentIndex = contentArray.length - 1;
+                }
+
+                contentDiv.innerHTML = contentArray[currentIndex];
+            });
+
+            rightArrow.addEventListener('click', () => {
+                currentIndex++;
+                if (currentIndex >= contentArray.length) {
+                    currentIndex = 0;
+                }
+                contentDiv.innerHTML = contentArray[currentIndex];
+            });
+
+    </script>
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

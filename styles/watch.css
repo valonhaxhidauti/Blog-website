@@ -1,0 +1,101 @@
+.watch {
+    position: relative;
+    top: 100px;
+    margin: 100px;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.kid1 {
+    width: 378px;
+    height: 441px;
+    background-image: url(kid.png);
+    background-size:cover;
+    margin-right: 20px;
+}
+
+#line2 {
+    position: relative;
+    border: 2px solid #E74040;;
+    width: 90px;
+    margin-bottom: 20px;
+}
+#watch {
+    color: #252B42;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+.problems {
+    color: #737373;
+    width: 345px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+.lmore {
+    color: #FF6551;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+    padding-top: 20px;
+}
+.food {
+    width: 513px;
+    height: 363px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84)),url("food.png");
+    background-size: cover;
+    /* position: relative; for play button*/
+    border-radius: 20px;
+}
+.quality {
+    margin-top: 0;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 100px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.text-gray {
+    width: 230px;
+}
+.courses {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 970px) {
+    .watch {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        margin: 20px 0;
+        top: 400px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .watch {
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        margin: 20px 0;
+        top: 700px;
+    }
+}

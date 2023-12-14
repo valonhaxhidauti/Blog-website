@@ -1,0 +1,77 @@
+header .brand {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+div .white {
+    width: 100%;
+    height: 150px;
+    background: white;
+}
+
+.join {
+    color: #fff;
+    background: #FF6551;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+}
+.join:hover {
+    background: #ea5242 !important;
+}
+.navigation {
+    color: #000;
+    position: relative;
+    top: 0px;
+    margin-left: auto;
+    bottom: 0px;
+    margin-right: 200px;
+}
+header {
+    /* position: fixed; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    margin: 50px;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+header .navigation  a:hover,#log:hover{
+    background: #aaa;
+  }
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+    .login {
+        display: none;
+    }
+}

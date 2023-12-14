@@ -1,0 +1,105 @@
+.recent-n{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EFEFFB;
+}
+.recent-n h3 {
+    margin: 60px auto 40px;
+}
+.recent-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    gap: 20px;
+}
+.man-watch1 {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background-image: url(man-watch1.png);
+    background-position: center;
+}
+#man-watch2 {
+    width: 280px;
+    height: 280px;
+    background-image: url(man-watch2.png);
+    background-position: center;
+}
+.man-watch1 p {
+    background: var(--button-color);
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-weight: 100;
+    font-size: 11px;
+    padding: 3px 8px;
+    color: var(--white);
+}
+.montblanc-s{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 15px;
+    bottom: 100px;
+    box-shadow: 0px 3px 4px 0px var(--star-color);
+    background: var(--white);
+}
+.montblanc-s p{
+    color: #9f9f9f;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    text-align: center;
+}
+.montblanc-s h5 {
+    padding: 10px 0;
+    color: var(--button-color);
+}
+.montblanc-s a {
+    margin: 20px 0;
+    font-size: 75%;
+    text-decoration: none;
+    color: var(--white);
+    background: #2E2E2E;
+    padding: 10px 20px;
+    transition: background .3s ease;
+}
+.montblanc-s a:hover {
+    background: #2e2e2ed7;
+}
+.spread-features {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0 60px;
+    gap: 30px;
+}
+.spread-f {
+    display: flex;
+    width: 230px;
+    flex-direction: column;
+    align-items: center;
+}
+.spread-f p {
+    color: #9f9f9f;
+    font-size: 13px;
+    padding: 0px;
+}
+.spread-f span {
+    color: var(--button-color);
+    font-size: 35px;
+    padding: 5px 0 15px;
+    border-radius: 10%;
+    background-color: white;
+    cursor: default;
+}

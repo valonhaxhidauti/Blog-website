@@ -1,0 +1,267 @@
+@import url(/styles/production.css);
+@import url(/styles/watch_features.css);
+@import url(/styles/recent_news.css);
+
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --button-color: #5668EE;
+    --hover-color: #3f60c6;
+    --paragraph-color: #737373;
+    --star-checked: #deb217;
+    --star-hover: #c59b08;
+    --star-color: #ccc;
+}
+
+#slider {
+    display: grid;
+    grid-template-columns: 100vw 100vw 100vw;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+.set-of-watches{
+    display: flex;
+    margin: 30px auto;
+    gap: 25px;
+    max-width: 900px;
+    overflow:scroll;
+}
+.set-of-watches::-webkit-scrollbar-thumb, .spread-features::-webkit-scrollbar-thumb {
+    background: var(--button-color);
+  }
+
+  /* Handle on hover */
+.set-of-watches::-webkit-scrollbar-thumb:hover, .spread-features::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color);
+  }
+.set-of-watches::-webkit-scrollbar, .spread-features::-webkit-scrollbar {
+    height: 10px;
+  }
+
+.future-of-tech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+}
+.text-container {
+    margin: auto 50px;
+}
+.main-watch {
+    width:500px;
+}
+.dashed {
+    text-decoration: line-through;
+}
+.bold {
+    font-weight: bold;
+}
+.hand-turn{
+    font-size: 25px;
+}
+.main-h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+.shop-now {
+    margin: 20px 0;
+    font-size: 75%;
+    text-decoration: none;
+    color: var(--white);
+    background: var(--button-color);
+    padding: 10px 30px;
+    transition: background .3s ease;
+}
+.shop-now:hover {
+    background: var(--hover-color);
+}
+.arrows {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 100px;
+}
+#right-arrow,#left-arrow{
+    font-size: 130%;
+    cursor: pointer;
+    margin: 5px;
+    padding: 2px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.55);
+    border-radius: 50%;
+}
+
+.watch-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.four-watches {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 300px 300px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.watch-desc h4 {
+    font-weight: 600;
+}
+.watch-desc p {
+    color: var(--paragraph-color);
+}
+.product-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
+.prod-head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0 60px;
+}
+.prod-head h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.prod-head p {
+    font-size: 12px;
+    color: var(--paragraph-color);
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 425px) {
+
+    section {
+        overflow-x: hidden;
+    }
+    .main-watch {
+        width: 200px;
+    }
+    .future-of-tech {
+        position: relative;
+        left: 30px;
+    }
+    .watch-info {
+        flex-direction: column;
+    }
+    img[width="500px"]{
+        width: 350px;
+        margin: 25px auto auto 10px;
+    }
+    .four-watches {
+        grid-template-columns: 350px;
+        margin-left: 10px;
+        grid-row-gap: 40px;
+    }
+    .hand-turn{
+        font-size: 18px;
+    }
+    div.arrows {
+        display: none;
+    }
+    .main-h1{
+        font-size: 20px;
+    }
+    #contact {
+        height: 0;
+    }
+    .watch-desc h4,.watch-desc p{
+        font-size: 14px;
+    }
+    .prod-head h3 {
+        font-size: 18px;
+    }
+    .material-symbols{
+        position: absolute;
+        bottom: 100px;
+        opacity: 1;
+    }
+    .set-of-watches {
+        gap: 5px;
+        margin: 30px auto;
+        max-width: 380px;
+        overflow: auto;
+    }
+    .set-of-watches::-webkit-scrollbar-thumb, .spread-features::-webkit-scrollbar-thumb {
+        background: var(--button-color);
+      }
+
+      /* Handle on hover */
+    .set-of-watches::-webkit-scrollbar-thumb:hover, .spread-features::-webkit-scrollbar-thumb:hover {
+        background: var(--hover-color);
+      }
+    .set-of-watches::-webkit-scrollbar, .spread-features::-webkit-scrollbar {
+        height: 10px;
+      }
+    .spec-watch:first-child{
+        margin-left:5px
+    }
+    .siri-adv {
+        height: 350px;
+        background-position: -220px;
+    }
+    .siri-adv h1{
+        font-size: 22px;
+    }
+    .siri-adv p {
+        font-size: 14px
+    }
+    .prod-head.lunch {
+        align-items: center;
+    }
+    .prod-head.lunch h3{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .shop-now {
+        padding: 10px 10px
+    }
+    .watch-features {
+        justify-content: space-around;
+    }
+    .watch-features-left {
+        width: 150px;
+        height: 440px;
+    }
+    .watch-features img {
+        width: 150px;
+    }
+    .unskewed-back {
+        width: 90vw;
+    }
+    .skewed-container form {
+        width: 80%;
+    }
+    .r-card:nth-child(2),
+    .r-card:nth-child(3){
+        display: none;
+    }
+    .r-card:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .r-card .man-watch1{
+        width: 360px ;
+    }
+    .montblanc-s {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+    }
+    .spread-features
+    {
+        margin: 40px 30px;
+        justify-content: unset;
+        overflow: auto;
+        max-width: 300px;
+    }
+    .spread-f h5{
+        width: 200px;
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="watchesstyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/d9487a61f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close fa-solid fa-xmark"></span>
+          <div class="modal-container">
+            <img src="styles/modal-watch.jpg" alt="watch" width="350px">
+            <div class="sub-container">
+                <h1>Subscribe our newsletter</h1>
+                <p>Sign up here to get 20% off on your next purchase, special...</p>
+                <input id="email-sub" class="modal-input" type="email" placeholder="Enter your email..." >
+                <a href="#" class="shop-now" id="subscribe">SUBSCRIBE</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="links">
+            <h2>
+                <a href="#" class="brand">Brandname</a>
+            </h2>
+            <div class="navigation">
+                <a href="/index.html">Home</a>
+                <a href="/product.html">Product</a>
+                <a href="#pricing">Pricing</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="login">
+                <a href="/watches.html" id="log" style="color: #000;">Watches</a>
+                <a href="#" class="join">Join Us →</a>
+            </div>
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+                <span class="menu-btn__burger"></span>
+                <span class="menu-btn__burger"></span>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <div class="navbar">
+                <a href="/index.html">Home</a>
+                <a href="/product.html">Product</a>
+                <a href="#pricing">Pricing</a>
+                <a href="/contact.html">Contact</a>
+                <a href="#coursess">Courses</a>
+                <a href="/watches.html">Watches</a>
+                <a href="#">Join Us</a>
+                <a href="#">Dummy 1</a>
+                <a href="#">Dummy 2</a>
+                <a href="#">Dummy 3</a>
+                <a href="#">Dummy 4</a>
+                <a href="#">Dummy 5</a>
+                <a href="#">Dummy 6</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="grey-back">
+            HOME > SMARTWATCH - BIP U
+        </div>
+        <div class="smartwatch" >
+            <div class="images-container">
+                <img src="styles/watch-prod1.jpg" alt="first watch" width="450px">
+                <div style="margin: 30px 0 0;">
+                    <img src="styles/watch-prod1.jpg" alt="first watch" width="100px" style="border: 1px solid #5668EE;">
+                    <img src="styles/watch-prod2.jpg" alt="first watch" width="100px" id="watch2">
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="smartwatch-info">
+                    <h1 id="product-name">Smartwatch - Bip U</h1>
+                    <p style="color: #5567ee; font-weight:600; margin: 10px 0">$211.00</p>
+                    <div class="flex-15">
+                        <div>
+                            <span class="fa fa-star fa-sm"style="color: #ccc;" ></span>
+                            <span class="fa fa-star fa-sm"style="color: #ccc;" ></span>
+                            <span class="fa fa-star fa-sm"style="color: #ccc;" ></span>
+                            <span class="fa fa-star fa-sm"style="color: #ccc;" ></span>
+                            <span class="fa fa-star fa-sm"style="color: #ccc;" ></span>
+                        </div>
+                        <p>No reviews</p>
+                    </div>
+                    <div class="flex-15" style="font-weight: 450; margin: 10px 0;">
+                        <p>Availability:</p>
+                        <p style="color: #28a745;">
+                            <i class="fa-solid fa-check fa-lg"></i> In Stock
+                        </p>
+                    </div>
+                    <p style="color: var(--paragraph-color); margin: 10px 0 20px;">
+                        Lorem Ipsuum is simply dummy text of the printing and typesetting industry.
+                        <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+            <div>
+                <div class="radio-toolbar" >
+                    <p>Size: </p>
+                    <input type="radio" id="radioMedium" name="radioSize" value="Medium" >
+                    <label for="radioMedium">M</label>
+
+                    <input type="radio" id="radioSmall" name="radioSize" value="Small">
+                    <label for="radioSmall">S</label>
+
+                    <input type="radio" id="radioLarge" name="radioSize" value="Large" checked>
+                    <label for="radioLarge">L</label>
+                </div>
+                <div class="radio-toolbar2" >
+                    <p>Color: </p>
+                    <input type="radio" id="radioMidnight" name="radioColor" value="Midnight" checked>
+                    <label for="radioMidnight"></label>
+
+                    <input type="radio" id="radioStormblue" name="radioColor" value="Stormblue">
+                    <label for="radioStormblue"></label>
+                </div>
+                <div class="radio-toolbar" >
+                    <p>Material: </p>
+                    <input type="radio" id="radioFelt" name="radioMaterial" value="Felt" >
+                    <label for="radioFelt">FELT</label>
+
+                    <input type="radio" id="radioLeather" name="radioMaterial" value="Leather">
+                    <label for="radioLeather">LEATHER</label>
+
+                    <input type="radio" id="radioDenim" name="radioMaterial" value="Denim" checked>
+                    <label for="radioDenim">DENIM</label>
+                </div>
+                <div class="quantity">
+                    <label>Quantity:</label>
+                    <button id="decrement" >-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="10" />
+                    <button id="increment">+</button>
+                </div>
+                <div class="flex" style="padding-top: 13px;">
+                    <button class="submit-form" id="buy-it">BUY IT NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="product-description">
+            <p id="desc_">Description</p>
+            <div class="prod-desc">
+                <div>
+                    <h3>Product Descriptions</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.</p>
+                    <div class="flex-3">
+                        <i class="fa-solid fa-battery-empty fa-2xl"></i>
+                        <div style="margin-left: 4px;">
+                            <h5>Playtime 20+ Hours</h5>
+                            <p>Nunc nec porttitor turpis. In eu risus enim. In vitae mollis elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex-3">
+                        <i class="fa-solid fa-volume-high fa-2xl"></i>
+                        <div>
+                            <h5>HD Noise Cancelling</h5>
+                            <p>Vivamus finibus vel mauris vehicula.</p>
+                        </div>
+                    </div>
+                    <div class="flex-3">
+                        <i class="fa-solid fa-music fa-2xl"></i>
+                        <div style="margin-left: 8px;">
+                            <h5>Dolby Atmos Sound</h5>
+                            <p>Nullam a magna porttitor, dictum risus nec, faucibus sapien.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="/styles/red-watch.jpg" alt="red-watch" width="400px">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="more">
+            <div>
+                <h5>Company info</h5>
+                <p>About Us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h5>Legal</h5>
+                <p>About Us</p>
+                <p>Carrier</p>
+                <p>We are hiring</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h5>Features</h5>
+                <p>Business Marketing</p>
+                <p>User Analytic</p>
+                <p>Live Chat</p>
+                <p>Unlimited Support</p>
+            </div>
+            <div>
+                <h5>Resources</h5>
+                <p>IOS & Android</p>
+                <p>Watch a Demo</p>
+                <p>Customers</p>
+                <p>API</p>
+            </div>
+            <div>
+                <h5>Get In Touch</h5>
+                <p id="phone">(480) 555-0103</p>
+                <p id="location">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                <p id="email">debra.holt@example.com</p>
+            </div>
+        </div>
+        <div class="watch1 footer">
+            <div>
+                <p>Made With Love By Figmaland All Right Reserved </p>
+            </div>
+            <div>
+                <a href="#" class="fa-brands fa-facebook fa-xl" id="icons"></a>
+                <a href="#" class="fa-brands fa-instagram fa-xl" id="icons"></a>
+                <a href="#" class="fa-brands fa-twitter fa-xl" id="icons"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
