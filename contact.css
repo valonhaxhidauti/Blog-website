@@ -68,7 +68,7 @@ textarea {
     resize: none;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 725px) {
     .grey-back {
         padding: 5px 15px;
     }

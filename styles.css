@@ -18,8 +18,12 @@
     display: flex;
     flex-direction: column;
 }
+.watch1 div:first-child {
+    width: 50%;
+}
 
 .more {
+    margin:20px auto;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -88,24 +92,14 @@ footer p {
 }
 
 @media only screen and (max-width: 970px) {
-
     .more {
-        position: relative;
-        top: 300px;
         flex-direction: column;
         margin-left: 50px;
         justify-content: stretch;
         width: auto;
     }
-    .watch1 {
-        margin: 200px 0 0;
-        top: 100px;
-    }
     .card {
         width: 100%;
-    }
-    .features {
-        margin: 10px;
     }
     .courses > *  {
         margin-right: 0;
@@ -116,29 +110,16 @@ footer p {
     .join {
         white-space: nowrap;
     }
-    .links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .links h2 {
         text-align: center;
     }
 }
 @media only screen and (max-width: 640px) {
-    #contact {
-        position: relative;
-        top: -500px;
-    }
     .more {
-        position: relative;
-        top: 600px;
         flex-direction: column;
         margin-left: 50px;
         justify-content: stretch;
         width: auto;
     }
-    .watch1 {
-        margin: 200px 0 0;
-        top: 500px;
-    }
+
 }

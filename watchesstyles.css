@@ -133,11 +133,7 @@
     margin: 10px 0;
 }
 
-@media only screen and (max-width: 425px) {
-
-    section {
-        overflow-x: hidden;
-    }
+@media only screen and (max-width: 725px) {
     .main-watch {
         width: 200px;
     }
@@ -256,10 +252,10 @@
     }
     .spread-features
     {
-        margin: 40px 30px;
+        margin: 40px auto;
         justify-content: unset;
         overflow: auto;
-        max-width: 300px;
+        max-width: 350px;
     }
     .spread-f h5{
         width: 200px;

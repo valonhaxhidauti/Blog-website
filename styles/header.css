@@ -31,10 +31,8 @@ div .white {
     top: 0px;
     margin-left: auto;
     bottom: 0px;
-    margin-right: 200px;
 }
 header {
-    /* position: fixed; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -58,6 +56,7 @@ header .navigation  a:hover,#log:hover{
 
 .links {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .paragraph {

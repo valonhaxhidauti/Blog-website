@@ -36,16 +36,16 @@ function generateHTML() {
                 <p class="${item.newPrice ? 'dashed' : 'bold'}">$${item.originalPrice}.00</p>
             </div>
             <div class="rate">
-                <input type="radio" id="star5" name="rate1" value="5"/>
-                <label for="star5" title="text"></label>
-                <input type="radio" id="star4" name="rate1" value="4"/>
-                <label for="star4" title="text"></label>
-                <input type="radio" id="star3" name="rate1" value="3"/>
-                <label for="star3" title="text"></label>
-                <input type="radio" id="star2" name="rate1" value="2"/>
-                <label for="star2" title="text"></label>
-                <input type="radio" id="star1" name="rate1" value="1"/>
-                <label for="star1" title="text"></label>
+                <input type="radio" id="star5${item.id}" name="${item.id}" value="5"/>
+                <label for="star5${item.id}" title="text"></label>
+                <input type="radio" id="star4${item.id}" name="${item.id}" value="4"/>
+                <label for="star4${item.id}" title="text"></label>
+                <input type="radio" id="star3${item.id}" name="${item.id}" value="3"/>
+                <label for="star3${item.id}" title="text"></label>
+                <input type="radio" id="star2${item.id}" name="${item.id}" value="2"/>
+                <label for="star2${item.id}" title="text"></label>
+                <input type="radio" id="star1${item.id}" name="${item.id}" value="1"/>
+                <label for="star1${item.id}" title="text"></label>
             </div>
             </div>
             `;

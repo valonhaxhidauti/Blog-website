@@ -12,14 +12,12 @@
 }
 
 .features {
-    position: relative;
     display: flex;
-    width: 1000px;
+    margin: 40px;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 30px;
-    top: 130px;
 }
 .line1 {
     width: 50px;
@@ -99,11 +97,18 @@
 
 @media only screen and (max-width: 970px) {
     .features {
-        position: relative;
         flex-wrap: wrap;
         margin-top: 50px;
         justify-content: center;
-        width: auto;
-        top: 00px;
+    }
+    #hqc {
+        font-size: 38px;
+        line-height: 40px;
+    }
+    .brandname {
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0, 0, 0.5)),url(teacherMob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 3;
     }
 }

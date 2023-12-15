@@ -177,9 +177,9 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #86ce67;
+    background-color: snow;
     margin: 65px 0;
-    opacity: 50%;
+    opacity: 80%;
     animation: greencircle linear infinite;
 }
 
@@ -198,8 +198,9 @@
     width: 230px;
     height: 230px;
     border-radius: 100%;
-    background-color: pink;
-    opacity: 60%;
+    background-color: #E77C40;
+    opacity: 80%;
+    z-index: 2;
     animation: redcircle 5s linear infinite;
 }
 
@@ -272,6 +273,14 @@
     }
     .products {
         margin-top: 20px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .red-circle span{
+        background-color: unset;
+    }
+    .green-circle span{
+        background-color: unset;
     }
 }
 
