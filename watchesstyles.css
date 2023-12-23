@@ -40,11 +40,13 @@
     height: 10px;
   }
 
-.future-of-tech {
+#future-of-tech {
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--black);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 .text-container {
     margin: auto 50px;
@@ -137,7 +139,7 @@
     .main-watch {
         width: 200px;
     }
-    .future-of-tech {
+    #future-of-tech {
         position: relative;
         left: 30px;
     }

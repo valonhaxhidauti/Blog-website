@@ -1,31 +1,37 @@
 //modal
 var modal = document.getElementById("myModal");
 
+// Check if the modal should be displayed or hidden
+if (!sessionStorage.getItem('modalClosed')) {
+  loadModal();
+}
+
 var sub = document.getElementById("subscribe");
 
 function loadModal() {
-    modal.style.display = "flex";
+  modal.style.display = "flex";
 }
-loadModal()
 
 var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function() {
-    modal.style.display = "none";
+span.onclick = function () {
+  closeModal();
 }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-    modal.style.display = "none";
-    }
+sub.onclick = function () {
+    closeModal();
 }
-function processEmail() {
-    var emailSub = document.getElementById('email-sub').value
-    console.log(`Email: ${emailSub}`)
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    closeModal();
+  }
 }
-sub.addEventListener('click', processEmail);
-sub.onclick = function() {
-    modal.style.display = "none";
+
+function closeModal() {
+  modal.style.display = "none";
+  // Save the information that the modal was closed for the session
+  sessionStorage.setItem('modalClosed', 'true');
 }
 
 // hamburger-button
@@ -101,3 +107,19 @@ function processUserData() {
         'Quantity: ' + quantity
     );
 }
+
+function changeDisplayWatch(clickedElement, imageSrc) {
+    var images = document.querySelectorAll('.images-container img');
+  
+    var displayWatch = document.getElementById('display-watch');
+    if (displayWatch) {
+      displayWatch.src = imageSrc;
+    }
+  
+    images.forEach(function (img) {
+      img.style.border = 'none';
+    });
+  
+    clickedElement.style.border = '1px solid #5668EE';
+  }
+  

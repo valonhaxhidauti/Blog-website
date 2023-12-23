@@ -80,5 +80,5 @@ function calcPrice() {
     let totalPrice = 0;
     cart.forEach((v, k) => totalPrice = totalPrice + +v);
     totalPrice = 'Total Price: $' + totalPrice;
-    console.log(totalPrice)
+    alert(totalPrice)
 }

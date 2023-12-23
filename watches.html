@@ -20,7 +20,7 @@
         <div class="modal-content">
           <span class="close fa-solid fa-xmark"></span>
           <div class="modal-container">
-            <img src="styles/modal-watch.jpg" alt="watch" width="350px">
+            <img src="styles/modal-watch.jpg" alt="watch" width="0">
             <div class="sub-container">
                 <h1>Subscribe our newsletter</h1>
                 <p>Sign up here to get 20% off on your next purchase, special...</p>
@@ -57,20 +57,15 @@
                 <a href="#coursess">Courses</a>
                 <a href="/watches.html">Watches</a>
                 <a href="#">Join Us</a>
-                <a href="#">Dummy 1</a>
-                <a href="#">Dummy 2</a>
-                <a href="#">Dummy 3</a>
-                <a href="#">Dummy 4</a>
-                <a href="#">Dummy 5</a>
-                <a href="#">Dummy 6</a>
+                <a href="#">Dummy</a>
             </div>
         </nav>
     </header>
 
-    <section >
+    <section>
         <div id="slider">
-            <div class="future-of-tech" id="future-of-tech">
-                <div class="text-container" >
+            <div id="future-of-tech">
+                <div class="text-container">
                     <p class="hand-turn">Here to make hand turn</p>
                     <h1 class="main-h1">The future of tech <br>is here. </h1>
                     <a href="#" class="shop-now">SHOP NOW</a>
@@ -79,8 +74,8 @@
             </div>
         </div>
         <div class="arrows">
-            <span id="left-arrow"><</span>
-            <span id="right-arrow">></span>
+            <span id="left-arrow">&lt;</span>
+            <span id="right-arrow">&gt;</span>
         </div>
     </section>
     <section>
@@ -291,12 +286,11 @@
             const contentDiv = document.getElementById('future-of-tech');
             const leftArrow = document.getElementById('left-arrow');
             const rightArrow = document.getElementById('right-arrow');
-            const contentArray =
-                [
+            const contentArray = [
                 '<div class="text-container" ><p class="hand-turn">Here to make hand turn</p><h1 class="main-h1">The future of<br>tech is here. </h1><a href="#" class="shop-now">SHOP NOW</a></div><img src="/styles/mainwatch5.jpg" alt="mainwatch" class="main-watch" width="400px" id="ora1">',
                 '<div class="text-container" ><p class="hand-turn">Here to make hand turn</p><h1 class="main-h1">A healthy leap<br> ahead.</h1><a href="#" class="shop-now">SHOP NOW</a></div><img src="/styles/mainwatch3.jpg" alt="mainwatch" class="main-watch" id="ora1">',
                 '<div class="text-container" ><p class="hand-turn">Here to make hand turn</p><h1 class="main-h1">With a healthy<br>dose of style.</h1><a href="#" class="shop-now">SHOP NOW</a></div><img src="/styles/mainwatch4.jpg" alt="mainwatch" class="main-watch" id="ora1">'
-                ];
+            ];
             let currentIndex = 0;
 
             leftArrow.addEventListener('click', () => {
@@ -306,7 +300,11 @@
                     currentIndex = contentArray.length - 1;
                 }
 
-                contentDiv.innerHTML = contentArray[currentIndex];
+                contentDiv.style.opacity = 0;
+                setTimeout(() => {
+                    contentDiv.innerHTML = contentArray[currentIndex];
+                    contentDiv.style.opacity = 1;
+                }, 300);
             });
 
             rightArrow.addEventListener('click', () => {
@@ -314,9 +312,13 @@
                 if (currentIndex >= contentArray.length) {
                     currentIndex = 0;
                 }
-                contentDiv.innerHTML = contentArray[currentIndex];
-            });
 
+                contentDiv.style.opacity = 0;
+                setTimeout(() => {
+                    contentDiv.innerHTML = contentArray[currentIndex];
+                    contentDiv.style.opacity = 1;
+                }, 300);
+            });
     </script>
     <script src="products.js"></script>
     <script src="main.js"></script>

@@ -18,7 +18,7 @@
         <div class="modal-content">
           <span class="close fa-solid fa-xmark"></span>
           <div class="modal-container">
-            <img src="styles/modal-watch.jpg" alt="watch" width="350px">
+            <img src="styles/modal-watch.jpg" alt="watch" width="0">
             <div class="sub-container">
                 <h1>Subscribe our newsletter</h1>
                 <p>Sign up here to get 20% off on your next purchase, special...</p>
@@ -55,12 +55,7 @@
                 <a href="#coursess">Courses</a>
                 <a href="/watches.html">Watches</a>
                 <a href="#">Join Us</a>
-                <a href="#">Dummy 1</a>
-                <a href="#">Dummy 2</a>
-                <a href="#">Dummy 3</a>
-                <a href="#">Dummy 4</a>
-                <a href="#">Dummy 5</a>
-                <a href="#">Dummy 6</a>
+                <a href="#">Prop</a>
             </div>
         </nav>
     </header>
@@ -71,12 +66,12 @@
         </div>
         <div class="smartwatch" >
             <div class="images-container">
-                <img src="styles/watch-prod1.jpg" alt="first watch" width="450px">
+                <img id="display-watch" src="styles/watch-prod1.jpg" alt="first watch" width="450px">
                 <div style="margin: 30px 0 0;">
-                    <img src="styles/watch-prod1.jpg" alt="first watch" width="100px" style="border: 1px solid #5668EE;">
-                    <img src="styles/watch-prod2.jpg" alt="first watch" width="100px" id="watch2">
+                  <img src="styles/watch-prod1.jpg" alt="first watch" width="100px" style="cursor: pointer; border: 1px solid #5668EE;" onclick="changeDisplayWatch(this, 'styles/watch-prod1.jpg')">
+                  <img src="styles/watch-prod2.jpg" alt="first watch" width="100px" style="cursor: pointer;" id="watch2" onclick="changeDisplayWatch(this, 'styles/watch-prod2.jpg')">
                 </div>
-            </div>
+            </div>              
             <div class="form-container">
                 <div class="smartwatch-info">
                     <h1 id="product-name">Smartwatch - Bip U</h1>
