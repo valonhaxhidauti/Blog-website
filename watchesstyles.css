@@ -49,6 +49,7 @@
     transition: opacity 0.3s ease-in-out;
 }
 .text-container {
+    width: 500px;
     margin: auto 50px;
 }
 .main-watch {
@@ -82,7 +83,7 @@
 .arrows {
     display: flex;
     justify-content: center;
-    margin: 40px 0 100px;
+    margin: 10px 0 100px;
 }
 #right-arrow,#left-arrow{
     font-size: 130%;
@@ -141,7 +142,6 @@
     }
     #future-of-tech {
         position: relative;
-        left: 30px;
     }
     .watch-info {
         flex-direction: column;
